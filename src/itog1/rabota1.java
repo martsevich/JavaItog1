@@ -28,7 +28,7 @@ public class rabota1 {
         Random random = new Random();
         return "+375 (29) " +
                 String.format("%02d", random.nextInt(100)) + "-" +
-                String.format("%02d", random.nextInt(1000)) + "-" +
+                String.format("%03d", random.nextInt(1000)) + "-" +
                 String.format("%02d", random.nextInt(100));
     }
     private static void printPhoneBook(Map<String, List<String>> phoneBook) {   // вывод контактов

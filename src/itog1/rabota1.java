@@ -4,6 +4,7 @@ public class rabota1 {
     public static void main(String[] args) {        // для хранения телефонной книги cоздаем HashMap
         Map<String, List<String>> phoneBook = new HashMap<>();
         // добавляем контакты
+        contact(phoneBook, "Сидоров", phoneNumber());
         contact(phoneBook, "Иванов", phoneNumber());
         contact(phoneBook, "Сидоров", phoneNumber());
         contact(phoneBook, "Иванов", phoneNumber());
@@ -25,7 +26,7 @@ public class rabota1 {
     }
     private static String phoneNumber() {   // метод для поиска случайного номера
         Random random = new Random();
-        return "+375(29) " +
+        return "+375 (29) " +
                 String.format("%02d", random.nextInt(100)) + "-" +
                 String.format("%02d", random.nextInt(1000)) + "-" +
                 String.format("%02d", random.nextInt(100));
